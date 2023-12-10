@@ -14,7 +14,7 @@ export default function LoginForm({ navigation }) {
 
   const handleLogin = async (values) => {
     try {
-      const url = "http://192.168.55.107/api/v1/login";
+      const url = "http://192.168.1.8/api/v1/login";
       const result = await fetchServices.postData(url, values);
 
       if (result.message != null) {
